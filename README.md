@@ -51,5 +51,8 @@ THEN the password is either displayed in an alert or written to the page
 
 ```
 * Xpert Leaning Assistant
-* 
+* Office Hours before/after class
+* Checked Assignment against Emily Morosoff(student)
+* W3Schools
+* MDN
 ```
