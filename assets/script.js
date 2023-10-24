@@ -84,16 +84,6 @@ passwordText.value = password;
 console.log(passwordText.value);
 }
 
-// Select, Copies, and Alerts User when #copy button is pressed
-function copyPassword() {
-const copyText = document.querySelector("#password");
-if (confirm("Would you like to copy your password?")) {
-  copyText.select();
-  navigator.clipboard.writeText(copyText.value);
-  alert("Text Copied!");
-} else return;
-}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-copyBtn.addEventListener("click", copyPassword);
