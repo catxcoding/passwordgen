@@ -43,7 +43,7 @@ THEN the password is either displayed in an alert or written to the page
 
 [Repository](https://github.com/catxcoding/passwordgen)
 
-![Screenshot](assets/passwordgen-screenshot.png)
+![Screenshot](screenshot.png)
 
 
 
