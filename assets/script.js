@@ -65,15 +65,35 @@ if (passwordLength < 8) {
   passwordLength = 0;
 }
 
+//for loop for password creation
+for (i = 0; i < passwordLength; i++) {
+  passwordResult += charSet.charAt(
+    Math.floor(Math.random() * charSet.length)
+  );
+}
+
+return passwordResult;
+}
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+let password = generatePassword();
+let passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+passwordText.value = password;
+console.log(passwordText.value);
+}
 
+// Select, Copies, and Alerts User when #copy button is pressed
+function copyPassword() {
+const copyText = document.querySelector("#password");
+if (confirm("Would you like to copy your password?")) {
+  copyText.select();
+  navigator.clipboard.writeText(copyText.value);
+  alert("Text Copied!");
+} else return;
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+copyBtn.addEventListener("click", copyPassword);
