@@ -21,7 +21,7 @@ function generatePassword() {
 
   let passwordLength = numBox.value;
   console.log(numBox.value);
-
+}
   //Checks if uppercase, lowercase, etc boxes are selected
   if (upperBtn.checked) {
     console.log("Upper Case Button Selected: " + upperBtn.checked);
@@ -69,8 +69,6 @@ if (!passwordLength || passwordLength < 1) {
   numBox.dataset.value = '';
   passwordLength = 0;
 }
-
-
 
 for (i = 0; i < passwordLength; i++) {
   passwordResult += charSet.charAt(
