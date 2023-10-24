@@ -6,7 +6,7 @@ const lowerBtn = document.getElementById("lowerCaseCheck");
 const numberBtn = document.getElementById("numbersCheck");
 const specialBtn = document.getElementById("specialCheck");
 let numBox = document.getElementById("pass-length-box");
-var generateBtn = document.querySelector("#generate");
+
 
 const chars = {
   lowerCase: "qwertyuioplkjhgfdsazxcvbnm",
